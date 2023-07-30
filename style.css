@@ -2,7 +2,7 @@
 body {
   font-family: "League Spartan";
   background-color: #3a4663;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -18,7 +18,7 @@ body {
   transition: opacity 0.2s;
   border-radius: 13px;
   width: 71px;
-  height: 17px;
+  height: 26px;
 }
 
 .slider:hover {
@@ -28,8 +28,8 @@ body {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background: #d03f2f;
   cursor: pointer;
   border-radius: 50%;
@@ -70,6 +70,7 @@ h1 {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: -0.667px;
+  border-radius: 10px;
 }
 main {
   padding: 0 24px 31px 24px;
@@ -79,7 +80,7 @@ main {
   margin-top: 24px;
   display: grid;
   grid-template-columns: 60px 60px 60px 60px;
-  padding: 24px 24px 0 24px;
+  padding: 24px;
   column-gap: 13px;
   row-gap: 13px;
 }
@@ -92,14 +93,22 @@ button {
   font-weight: 700;
   line-height: 30px;
   color: #434a59;
+  border-radius: 5px;
+  box-shadow: 0px -4px 0px 0px #b3a497 inset;
 }
 .container {
   width: 327px;
   background-color: #242d44;
+  border-radius: 10px;
+  height: 420px;
 }
 .del {
   font-size: 20px;
   line-height: 18px;
+  border-radius: 5px;
+  background: #647198;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+  color: #fff;
 }
 .two-button {
   gap: 7px;
@@ -123,8 +132,9 @@ button {
   background: #d03f2f;
   box-shadow: 0px -4px 0px 0px #93261a inset;
   grid-column: 3/5;
+  color: #fff;
 }
-
+/* theme2  */
 .theme2 .button {
   background-color: #e5e4e1;
 }
@@ -147,6 +157,13 @@ button {
 .theme2 .two-button {
   background-color: #d2cdcd;
 }
+.theme2 .slider{
+  background-color: #D2CDCD;
+}
+.theme2 .del{
+  background: #378187;
+
+}
 /* 
  theme3 */
 .theme3 .button {
@@ -167,20 +184,84 @@ button {
   color: #ffe53d;
 }
 .theme3 .reset {
-  background-color:#56077C;
-  box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+  background-color: #56077c;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
 }
 .theme3 .red {
-  background-color:#00DED0;
-  box-shadow: 0px -4px 0px 0px #6CF9F1 inset;
+  background-color: #00ded0;
+  box-shadow: 0px -4px 0px 0px #6cf9f1 inset;
 }
-.theme3 .del{
-  background-color: #331c4d;
-  color: #ffe53d;
+.theme3 .del {
+  color: #FFF;
+  background: #56077C;
+
 }
 .theme3 {
-  background-color: #17062A;
+  background-color: #17062a;
 }
-.theme2{
-  background-color: #E6E6E6;
+.theme2 {
+  background-color: #e6e6e6;
+}
+.theme3 .slider{
+  background-color: #1E0936;
+
+}
+.theme3 
+.slider::-webkit-slider-thumb{
+  background: #00DED0;
+}
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 30px 24px 32px 24px;
+  }
+  body {
+    height: 100vh;
+  }
+  .container {
+    width: 540px;
+    height: 480px;
+  }
+  .calc-numbers {
+    grid-template-columns: 101px 101px 101px 101px;
+    row-gap: 25px;
+    column-gap: 24px;
+    padding: 32px 32px 32px 32px;
+  }
+  .button {
+    width: 101px;
+    height: 64px;
+    font-size: 40px;
+    border-radius: 10px;
+  }
+  .del {
+    width: 101px;
+    height: 64px;
+    border-radius: 10px;
+    font-size: 28px;
+  }
+  .total {
+    width: 540px;
+    height: 128px;
+  }
+  .reset {
+    width: 227px;
+    height: 64px;
+    font-size: 28px;
+    border-radius: 10px;
+  }
+  .red {
+    width: 227px;
+    font-size: 28px;
+    border-radius: 10px;
+    height: 64px;
+  }
+  .two-button {
+    gap: 11px;
+  }
+  .colors {
+    margin-left: 342px;
+  }
+  .total{
+    font-size: 56px;
+  }
 }

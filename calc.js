@@ -40,18 +40,22 @@ console.log(total.textContent);
 //background colors
 function colors() {
   if (slider.value == 2) {
+    document.body.classList.remove("theme1");
+    document.body.classList.remove("theme3");
     document.body.classList.add("theme2");
   }
-    if  (slider.value == 3){
+  if (slider.value == 3) {
+    document.body.classList.remove("theme1");
+    document.body.classList.remove("theme2");
     document.body.classList.add("theme3");
-    
   }
- 
+  if (slider.value == 1) {
+    document.body.classList.remove("theme2");
+    document.body.classList.remove("theme3");
+    document.body.classList.add("theme1");
   }
+}
 
 slider.addEventListener("input", colors);
 
 console.log(slider.value == 3);
-
-// const twoButton = document.querySelector(".two-button");
-// twoButton = theme1;
