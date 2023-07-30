@@ -2,7 +2,7 @@
 body {
   font-family: "League Spartan";
   background-color: #3a4663;
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -157,12 +157,11 @@ button {
 .theme2 .two-button {
   background-color: #d2cdcd;
 }
-.theme2 .slider{
-  background-color: #D2CDCD;
+.theme2 .slider {
+  background-color: #d2cdcd;
 }
-.theme2 .del{
+.theme2 .del {
   background: #378187;
-
 }
 /* 
  theme3 */
@@ -192,9 +191,8 @@ button {
   box-shadow: 0px -4px 0px 0px #6cf9f1 inset;
 }
 .theme3 .del {
-  color: #FFF;
-  background: #56077C;
-
+  color: #fff;
+  background: #56077c;
 }
 .theme3 {
   background-color: #17062a;
@@ -202,13 +200,11 @@ button {
 .theme2 {
   background-color: #e6e6e6;
 }
-.theme3 .slider{
-  background-color: #1E0936;
-
+.theme3 .slider {
+  background-color: #1e0936;
 }
-.theme3 
-.slider::-webkit-slider-thumb{
-  background: #00DED0;
+.theme3 .slider::-webkit-slider-thumb {
+  background: #00ded0;
 }
 @media screen and (min-width: 1440px) {
   header {
@@ -261,7 +257,7 @@ button {
   .colors {
     margin-left: 342px;
   }
-  .total{
+  .total {
     font-size: 56px;
   }
 }
