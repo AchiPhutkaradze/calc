@@ -4,20 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calculator</title>
-    <!-- <link rel="icon" href="./assets/favicon-32x32.png" /> -->
+    <link rel="icon" href="./favicon-32x32.png" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="./calc.js"></script>
   </head>
   <body>
-    
     <header>
       <h1>calc</h1>
       <div class="colors flex">
         <p class="theme">THEME</p>
-        <label class="slider">
-          <input type="range" min="1" max="3"  value = 1 class="slider" id="myrange">
-        </label>
+        <div class="slider-box">
+        <div class="numbers flex">
+          <p class="numb 1">1</p>
+          <p class="numb 2">2</p>
+          <p class="numb 3">3 </p>
+        </div>
+          <input
+            type="range"
+            min="1"
+            max="3"
+            value="1"
+            class="slider"
+            id="myrange"
+          />
+      </div>
       </div>
     </header>
     <main>
@@ -27,7 +38,7 @@
           <button class="button">7</button>
           <button class="button">8</button>
           <button class="button">9</button>
-          <button class=" del">DEL</button>
+          <button class="del">DEL</button>
           <button class="button">4</button>
           <button class="button">5</button>
           <button class="button">6</button>
@@ -39,11 +50,11 @@
           <button class="button">.</button>
           <button class="button">0</button>
           <button class="button">/</button>
-          <button class="button x ">x</button>
-        <div class="two-button ">
-          <button class="reset">RESET</button>
-          <button class="red">=</button>          
-        </div>
+          <button class="button x">x</button>
+          <div class="two-button">
+            <button class="reset">RESET</button>
+            <button class="red">=</button>
+          </div>
         </div>
       </div>
     </main>

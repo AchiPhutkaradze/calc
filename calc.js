@@ -7,14 +7,31 @@ const backspace = document.querySelector(".del");
 const slider = document.getElementById("myrange");
 
 buttons.forEach(function (button) {
-  button.addEventListener("click", function () {
-    console.log(button.innerHTML);
+  button.addEventListener("click", function (event) {
+    const content = total.textContent;
+    if (
+      event.target.textContent === "x" ||
+      event.target.textContent === "/" ||
+      event.target.textContent === "+" ||
+      event.target.textContent === "-" ||
+      event.target.textContent === "."
+    ) {
+      if (
+        content[content.length - 1] === "x" ||
+        content[content.length - 1] === "/" ||
+        content[content.length - 1] === "+" ||
+        content[content.length - 1] === "-" ||
+        content[content.length - 1] === "."
+      ) {
+        return;
+      }
+    }
     total.innerHTML += button.textContent;
   });
 });
 redButton.addEventListener("click", function () {
   let calc = eval(total.textContent.replaceAll("x", "*"));
-  total.innerHTML = calc;
+  total.innerHTML = calc.toFixed(2);
 });
 //reset function
 function myReset() {
@@ -34,8 +51,6 @@ function performBackspace() {
 }
 
 backspace.addEventListener("click", performBackspace);
-
-console.log(total.textContent);
 
 //background colors
 function colors() {
@@ -57,5 +72,3 @@ function colors() {
 }
 
 slider.addEventListener("input", colors);
-
-console.log(slider.value == 3);

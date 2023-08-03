@@ -17,10 +17,20 @@ body {
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
   border-radius: 13px;
-  width: 71px;
-  height: 26px;
-}
+  width: 60px;
 
+  height: 26px;
+  padding: 0 5px 0 5px;
+}
+.numb {
+  color: white;
+  font-size: 12px;
+}
+.numbers {
+  gap: 18px;
+  justify-content: center;
+  margin-left: 5px;
+}
 .slider:hover {
   opacity: 1;
 }
@@ -28,8 +38,8 @@ body {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   background: #d03f2f;
   cursor: pointer;
   border-radius: 50%;
@@ -71,6 +81,7 @@ h1 {
   font-weight: 700;
   letter-spacing: -0.667px;
   border-radius: 10px;
+  overflow: hidden;
 }
 main {
   padding: 0 24px 31px 24px;
@@ -94,6 +105,9 @@ button {
   line-height: 30px;
   color: #434a59;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0px -4px 0px 0px #b3a497 inset;
 }
 .container {
@@ -109,6 +123,9 @@ button {
   background: #647198;
   box-shadow: 0px -4px 0px 0px #414e73 inset;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .two-button {
   gap: 7px;
@@ -163,6 +180,9 @@ button {
 .theme2 .del {
   background: #378187;
 }
+.theme2 .numb {
+  color: #36362c;
+}
 /* 
  theme3 */
 .theme3 .button {
@@ -206,7 +226,10 @@ button {
 .theme3 .slider::-webkit-slider-thumb {
   background: #00ded0;
 }
-@media screen and (min-width: 1440px) {
+.theme3 .numb {
+  color: #ffe53d;
+}
+@media screen and (min-width: 1024px) {
   header {
     padding: 30px 24px 32px 24px;
   }
@@ -229,12 +252,17 @@ button {
     font-size: 40px;
     border-radius: 10px;
   }
+  button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
   .del {
     width: 101px;
     height: 64px;
     border-radius: 10px;
     font-size: 28px;
   }
+
   .total {
     width: 540px;
     height: 128px;
@@ -245,12 +273,14 @@ button {
     font-size: 28px;
     border-radius: 10px;
   }
+
   .red {
     width: 227px;
     font-size: 28px;
     border-radius: 10px;
     height: 64px;
   }
+
   .two-button {
     gap: 11px;
   }
